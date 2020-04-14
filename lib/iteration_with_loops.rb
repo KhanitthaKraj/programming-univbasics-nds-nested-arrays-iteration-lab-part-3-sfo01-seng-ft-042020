@@ -8,13 +8,12 @@ def join_nested_strings(src)
   while count < src.length do
     inner_count = 0
     while inner_count < src[count].length do
-      binding.pry
       if src[count][inner_count].class == String
         new_string = new_string + src[count][inner_count]
       end
       inner_count += 1
     end
-    
+    binding.pry
     count += 1
   end
 
