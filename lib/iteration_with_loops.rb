@@ -11,9 +11,9 @@ def join_nested_strings(src)
       each.select{|string|}
       inner_count += 1
     end
-    new_string += each.join(" ")
+    
     count += 1
   end
-  
+  new_string += each.join(" ")
   new_string
 end
