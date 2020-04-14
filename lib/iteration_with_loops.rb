@@ -8,8 +8,10 @@ def join_nested_strings(src)
     each << src[count]
     inner_count = 0
     while inner_count < src[count].length do
-      each.select{|string|}
-      inner_count += 1
+      if src[count][inner_count][0] = string
+      
+        inner_count += 1
+      end
     end
     new_string = each.join(" ")
     count += 1
