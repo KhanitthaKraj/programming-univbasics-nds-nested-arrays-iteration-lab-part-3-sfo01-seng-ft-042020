@@ -9,7 +9,7 @@ def join_nested_strings(src)
     inner_count = 0
     while inner_count < src[count].length do
       binding.pry
-      
+      if src[count][inner_count].class == String
       inner_count += 1
     end
     
