@@ -9,7 +9,8 @@ def join_nested_strings(src)
     each << src[count]
     inner_count = 0
     while inner_count < src[count].length do
-      each.select{|string|}
+      sub_each << each[inner_count]
+      sub_each.select{|string|}
       inner_count += 1
     end
     
