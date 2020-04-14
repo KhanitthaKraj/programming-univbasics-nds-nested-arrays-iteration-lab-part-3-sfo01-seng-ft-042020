@@ -12,8 +12,9 @@ def join_nested_strings(src)
       each << src[count][inner_count]
       inner_count += 1
     end
-    new_string = each.join(" ")
+    
     count += 1
   end
+  new_string = each.join(" ")
   new_string
 end
