@@ -5,11 +5,10 @@ def join_nested_strings(src)
   each = []
   new_string = ""
   while count < src.length do
-    
+    each << src[count]
     inner_count = 0
     while inner_count < src[count].length do
-      
-      each << src[count][inner_count]
+      each.select{|string|}
       inner_count += 1
     end
     
