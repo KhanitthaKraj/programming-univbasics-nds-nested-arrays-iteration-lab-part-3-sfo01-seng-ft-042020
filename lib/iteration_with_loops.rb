@@ -7,11 +7,10 @@ def join_nested_strings(src)
   new_string = ""
   while count < src.length do
     binding.pry
-    each << src[count]
     inner_count = 0
     while inner_count < src[count].length do
-      sub_each << each[inner_count]
-      sub_each.select{|string|}
+      
+      
       inner_count += 1
     end
     
