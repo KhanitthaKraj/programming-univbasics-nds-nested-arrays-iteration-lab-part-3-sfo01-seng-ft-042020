@@ -6,10 +6,9 @@ def join_nested_strings(src)
   count = 0
   new_string = ""
   while count < src.length do
-    binding.pry
     inner_count = 0
     while inner_count < src[count].length do
-      
+      binding.pry
       
       inner_count += 1
     end
