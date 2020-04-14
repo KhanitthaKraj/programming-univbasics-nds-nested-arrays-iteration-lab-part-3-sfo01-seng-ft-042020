@@ -16,6 +16,5 @@ def join_nested_strings(src)
     binding.pry
     count += 1
   end
-
   new_string
 end
